@@ -92,24 +92,12 @@ app.listen(port)
 
 // Todo
 // Todo - Make pages nice for the error, redirection and notfound page
-// TODO - Show recently generated urls instead of all (Recent 10?) (Sorted from newest to oldest)
-// TODO (Issue) - There is currently an issue in the deployment build where if you type https://urlwords.dreamhosters.com// there is a white screen.
-// TODO (Possible Issue) - There may be an issue that if you access the url /api/urls, the newly created urls aren't automatically visible in either /api/urls or the recently generated urls list.
-// TODO (Possible Issue) - There may be an issue that if you post a new url, then any urls after that post aren't automatically visible in either /api/urls or the recently generated urls list.
-// TODO - The error message on the recently generated urls is not very appealing.
-// TODO - The website is probably open to SQL injection - Learn how to fully prevent it
+// TODO - The error message on the recently generated urls is not very good looking.
+
+//! Fix
+//! - There is currently an issue in the deployment build where if you type https://urlwords.dreamhosters.com// there is a white screen.
 
 //! Some issues I had
 //! CORS was disallowing me to redirect the user by sending a GET request from the front to this server and redirecting from the GET request.
 //! I completely forgot to import path and spent hours wondering why client-routing wasn't working.
-//! If there is an error when building the deployment build, then I should probably fix them as they can cause strange errors. 
-
-//* Could Use
-/*
-con.promise().query("SELECT 1")
-  .then( ([rows,fields]) => {
-    console.log(rows);
-  })
-  .catch(console.log)
-  .then( () => con.end());
-*/
+//! If there is an error when building the deployment build, then I should probably fix them as they can cause strange issues. 
