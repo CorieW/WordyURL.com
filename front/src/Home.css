@@ -1,0 +1,62 @@
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.short-url-form {
+    --form-input-font-size: 28px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.short-url-form span {
+    font-size: var(--form-input-font-size);
+}
+
+.short-url-form input {
+    flex: 1;
+    width: 100%;
+    margin: 0 0 0 5px;
+    font-size: var(--form-input-font-size);
+    border: none;
+    background-color: whitesmoke;
+}
+
+.short-url-form button {
+    width: 100%;
+    margin: 5px 0;
+    font-size: var(--form-input-font-size);
+    background-color: gold;
+    border: none;
+}
+
+.info-headers {
+    overflow-wrap: break-word;
+}
+
+.info-header {
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info .use-example {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+}
+
+@media only screen and (max-width: 425px) {
+    .short-url-form {
+        --form-input-font-size: 5vw;
+    }
+
+    .info {
+        text-align: center;
+    }
+}
